@@ -1,0 +1,4 @@
+  ['C:/Users/ajayk/OneDrive/Documents/IIDT/mini projects/forensics//Abstract.docx', '100cc094030d8e5468724d7a27680e04']
+  ['C:/Users/ajayk/OneDrive/Documents/IIDT/mini projects/forensics//mail_send.py', '9d2098da3733f49279207990db042cae']
+  ['C:/Users/ajayk/OneDrive/Documents/IIDT/mini projects/forensics//sam1.py', '10730d4009b6b454b5e0f9dd3ce87652']
+  ['C:/Users/ajayk/OneDrive/Documents/IIDT/mini projects/forensics//test.txt', 'bda99d1b7d85d84bcf8fc5b6573fc5d0']
