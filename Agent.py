@@ -45,8 +45,8 @@ def hash_cal(start,end,fl,hash):#this function calculates the hash value
 	
 	
 def sendmail(alert):
-	fromaddr = 'fortestingcodes@gmail.com'
-	toaddrs = 'ajaykumarkk77@gmail.com'
+	fromaddr = '@gmail.com'
+	toaddrs = '@gmail.com'
 
 	msg = MIMEMultipart()
 	msg['Date'] = formatdate(localtime=True)
@@ -57,8 +57,8 @@ def sendmail(alert):
 	body = MIMEText(str(alert))
 	msg.attach(body)
 
-	username = 'fortestingcodes@gmail.com'
-	password = 'srinuiidt25'
+	username = '@gmail.com'
+	password = ''
 	server = smtplib.SMTP_SSL('smtp.googlemail.com', 465)
 	server.login(username, password)
 	server.sendmail(fromaddr, toaddrs, msg.as_string())
@@ -82,7 +82,7 @@ def diff(dcalculated,dformfile,ddiff):
 if __name__ == '__main__':
 	ddiff={}
 	manager = Manager()
-	URL = "http://192.168.51.53/fim/php/getSysId.php"
+	URL = "http://localhost/fim/php/getSysId.php"
 	x=(':'.join(['{:02x}'.format((uuid.getnode() >> ele) & 0xff)
 	for ele in range(0,8*6,8)][::-1]))
 	PARAMS = {'mac_id':x}
@@ -139,7 +139,7 @@ if __name__ == '__main__':
 	print("Sending the POST to the server")
 	if len(ddiff.keys()) > 0:
 		PARAMS = json.dumps(ddiff)
-		URL = "http://192.168.51.53/fim/php/loadHash.php"
+		URL = "http://localhost/fim/php/loadHash.php"
 		da = {'hashes':PARAMS,'sysid':sysID}
 		r1 = requests.post(url = URL, data = da)
 		print(r1.text);
