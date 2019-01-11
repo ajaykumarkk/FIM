@@ -51,8 +51,8 @@ def sendmail(alert):
    body = MIMEText(str(alert))
    msg.attach(body)
 
-   username = 'fortestingcodes@gmail.com'
-   password = 'srinuiidt25'
+   username = ''
+   password = ''
    server = smtplib.SMTP_SSL('smtp.googlemail.com', 465)
    server.login(username, password)
    server.sendmail(fromaddr, toaddrs, msg.as_string())
