@@ -38,8 +38,8 @@ def hash_cal(filename):#this function calculates the hash value
 
         
 def sendmail(alert):
-   fromaddr = 'fortestingcodes@gmail.com'
-   toaddrs = 'ajaykumarkk77@gmail.com'
+   fromaddr = '@gmail.com'
+   toaddrs = '@gmail.com'
 
    msg = MIMEMultipart()
    msg['Date'] = formatdate(localtime=True)
